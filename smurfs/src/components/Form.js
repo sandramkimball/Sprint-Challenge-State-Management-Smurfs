@@ -8,10 +8,14 @@ const AddSmurf = ({dispatch}) => {
         setNewSmurf(e.target.value)
     };
 
+    const handleSubmit = e =>{
+        e.preventDefault();
+    }
+
     console.log(`New Smurf Incoming:`, newSmurf)
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input 
                 type='text'
                 name='smurf'

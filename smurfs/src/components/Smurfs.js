@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import SmurfData from "./SmurfData";
 import { fetchData } from "../actions";
 
-const Smurfs = props => {
+const Smurfs = (props) => {
   useEffect(() => {
     props.fetchData();
   }, []);

@@ -10,9 +10,15 @@ const App = () => {
   
     return (
       <div className="App">
-        <h1>SMURFS! 2.0 W/ Redux</h1>
-        <Form dispatch={dispatch}/>
-        <Smurfs smurfs={smurfs} dispatch={dispatch}/>
+        <header>         
+        </header>
+        <section>
+          <Form dispatch={dispatch}/>
+          <Smurfs smurfs={smurfs} dispatch={dispatch}/>
+        </section>
+        <footer>
+          <img src='http://images.all-free-download.com/images/graphiclarge/smurfs_0_110902.jpg' alt='smurf logo'/>
+        </footer>
       </div>
     );
 }
