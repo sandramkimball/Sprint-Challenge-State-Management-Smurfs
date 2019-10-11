@@ -26,11 +26,24 @@ form button{
   height: 40px;
   width: 100px;
 }
-
+.smurf-container{
+  margin: 0 auto;
+}
+.smurf-container div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .smurf-data{
-  border: 1px solid #91c4ef;
-  width: 40%;
-  margin: 10px auto;
+  border: 2px solid #91c4ef;
+  width: 30%;
+  margin: 10px;
+  flex-direction: column;
+}
+.smurf-data p{
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 0;
 }
 
 footer{

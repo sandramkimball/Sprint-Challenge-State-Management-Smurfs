@@ -13,11 +13,13 @@ const Smurfs = (props) => {
   }
 
   return (
-    <div>
-      {props.error && <p>{props.error}</p>}
-      {props.smurfs.map(item => (
-        <SmurfData key={item.id} item={item} />
-      ))}
+    <div className='smurf-container'>
+      <div>
+        {props.error && <p>{props.error}</p>}
+        {props.smurfs.map(item => (
+          <SmurfData key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   )
 };
